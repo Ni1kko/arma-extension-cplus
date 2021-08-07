@@ -6,7 +6,7 @@
 
 #include "dllmain.h"
 
-#define ExtensionVersion "0.5"
+#define ExtensionVersion "0.0.1"
 
 // ("Example" callExtension "example")
 void Example::CallExtension(char* output, int outputSize, const char* function) noexcept
