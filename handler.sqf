@@ -141,7 +141,7 @@ Example_Server_fnc_ExtensionInit = {
 
 	///////////////////
 	//-- Beta Testing
-	"start" call Example_Server_fnc_callExtension; // "OK" || ""
+	["start",[""]] call Example_Server_fnc_callExtension; // "OK" || ""
 };
 
 [] call Example_Server_fnc_ExtensionInit;

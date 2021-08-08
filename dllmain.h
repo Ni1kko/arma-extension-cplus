@@ -49,7 +49,6 @@
 			static void CallExtension(int(*callbackPointer)(char const* name, char const* function, char const* data)) noexcept { Example::ExtensionCallback = callbackPointer; }
 			static void CallExtension(char* output, int outputSize) noexcept { Example::CallExtension(output, outputSize, "armaMoudle"); };
 		private:
-			static std::string AuthKey;
 			static void Return(char* output, int outputSize, std::string returnMessage) noexcept { strncpy(output, returnMessage.c_str(), outputSize); }
 			static int Return(char* output, int outputSize, std::string returnMessage, int returncode) noexcept { Example::Return(output, outputSize, returnMessage); return returncode; }
 	};
